@@ -8,6 +8,12 @@ const User = db.define('user', {
     unique: true,
     allowNull: false
   },
+  username: {
+    type: Sequelize.STRING
+  },
+  language: {
+    type: Sequelize.ENUM('en-US')
+  },
   password: {
     type: Sequelize.STRING
   },
